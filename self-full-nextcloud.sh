@@ -445,4 +445,4 @@ echo "Your Nextcloud password is written on this file /root/nextcloud_pwd.txt"
 
 ## References:
 ## https://docs.nextcloud.com/server/stable/admin_manual/installation/source_installation.html
-## https://www.adminbyaccident.com/freebsd/how-to-freebsd/how-to-install-nextcloud-on-freebsd-12/
+## https://www.accident.com/freebsd/how-to-freebsd/how-to-install-nextcloud-on-freebsd-12/
