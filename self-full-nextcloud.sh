@@ -34,7 +34,7 @@ pkg install -y php74 php74-mysqli php74-extensions
 pkg install -y expect
 
 # Set a ServerName directive in Apache HTTP. Place a name to your server.
-sed -i -e 's/#bf4-srv.tk www.bf4-srv.tk:80/ServerName SFO3/g' /usr/local/etc/apache24/httpd.conf
+sed -i -e 's/#bf4-srv.tk www.bf4-srv.tk:80/ServerName bf4-srv/g' /usr/local/etc/apache24/httpd.conf
 
 # Configure Apache HTTP to use MPM Event instead of the Prefork default
 # Disable the Prefork MPM
