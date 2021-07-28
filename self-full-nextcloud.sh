@@ -34,7 +34,7 @@ pkg install -y php74 php74-mysqli php74-extensions
 pkg install -y expect
 
 # Set a ServerName directive in Apache HTTP. Place a name to your server.
-sed -i -e 's/#ServerName www.example.com:80/ServerName California/g' /usr/local/etc/apache24/httpd.conf
+sed -i -e 's/#bf4-srv.tk www.bf4-srv.tk:80/ServerName SFO3/g' /usr/local/etc/apache24/httpd.conf
 
 # Configure Apache HTTP to use MPM Event instead of the Prefork default
 # Disable the Prefork MPM
@@ -122,19 +122,19 @@ SECURE_APACHE=$(expect -c "
 set timeout 10
 spawn openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /usr/local/etc/apache24/server.key -out /usr/local/etc/apache24/server.crt
 expect \"Country Name (2 letter code) \[AU\]:\"
-send \"ES\r\"
+send \"US\r\"
 expect \"State or Province Name (full name) \[Some-State\]:\"
-send \"Barcelona\r\"
+send \"Nevada\r\"
 expect \"Locality Name (eg, city) \[\]:\"
-send \"Terrassa\r\"
+send \"Las Vegas\r\"
 expect \"Organization Name (eg, company) \[Internet Widgits Pty Ltd\]:\"
-send \"Adminbyaccident.com\r\"
+send \"bf4-srv\r\"
 expect \"Organizational Unit Name (eg, section) \[\]:\"
-send \"Operations\r\"
+send \"admin\r\"
 expect \"Common Name (e.g. server FQDN or YOUR name) \[\]:\"
-send \"Albert Valbuena\r\"
+send \"katie bee\r\"
 expect \"Email Address \[\]:\"
-send \"thewhitereflex@gmail.com\r\"
+send \"katgetscash@pm.me\r\"
 expect eof
 ")
 
